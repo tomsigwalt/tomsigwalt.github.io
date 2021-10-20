@@ -7,6 +7,118 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+		.Tom{
+			max-width: 50%;
+			height: auto;
+		}
+			/* @media screen and (max-width: 1265px){
+				.Tom{
+					margin: -10px 0 0 0; 
+				}
+			} */
+
+			@media screen and (max-width: 736px){
+				.Tom{
+					max-width: 100%;
+					height: auto;
+				}
+			} 
+
+		#parallax{
+			background-color: #cac1bb;
+			padding: 15rem 3rem 7rem 3rem;
+			margin: 3rem 0rem 3rem 5rem;
+			border-radius: 25px 0 0 25px;
+			box-shadow: 20px 20px 20px;
+		}
+
+
+		#Arline{
+			text-align: center;
+			font-size: 30px;
+		}
+		
+		#traits{
+
+			padding: 0 0 0 17rem;
+    		margin: -222px 0 0 0;
+			text-align: right;
+			font-size: 25px;
+		}
+			
+
+		.traitsGrey{
+			margin: 10px 0 10px 0;
+			background-color: #868686;
+		}
+
+		#trait1:hover{
+			margin: 10px 0 10px 0;
+			background-color: magenta;
+		}
+
+		#trait2:hover{
+			margin: 10px 0 10px 0;
+			background-color: yellow;
+		}
+
+		#trait3:hover{
+			margin: 10px 0 10px 0;
+			background-color: black;
+			color: white;
+		}
+
+
+
+		@media screen and (max-width: 1280px){
+				#traits{
+					padding: 0 0 0 15rem;
+					margin: -18rem 0 0 0 ;
+					text-align: right;
+					font-size: 16px;
+				}
+			}
+
+			@media screen and (max-width: 1265px){
+				#traits{
+					padding: 0 0 0 15rem;
+					margin: -11rem 0 0 0 ;
+					text-align: right;
+					font-size: 16px;
+				}
+			}
+
+			@media screen and (max-width: 900px){
+				#traits{
+					padding: 0 0 0 13rem;
+					margin: -11rem 0 0 0 ;
+					text-align: right;
+					font-size: 16px;
+				}
+			}
+
+		@media screen and (max-width: 736px){
+				#traits{
+					padding: 0 0 0 0;
+					margin: 0 0 0 0 ;
+					text-align: center;
+					font-size: 25px;
+				}
+			}
+
+		</style>
+
+		<!-- <script>
+			let parallax = document.getElementById('parallax');
+
+			window.addEventListener('scroll',function(){
+				let value = window.scrollY;
+				parallax.style.left = value + 'px';
+
+		})
+		</script> -->
+
 	</head>
 	<body class="is-preload">
 
@@ -31,9 +143,9 @@
 					<nav id="nav">
 						<ul class="links">
 							<li class="active"><a href="index.html">Home</a></li>
-							<li><a href="#Thomas">About</a></li>
-							<li><a href="Projects">Projects</a></li>
-							<li><a href="footer">Contact</a></li>
+							<li><a href="#About">About</a></li>
+							<li><a href="#projects">Projects</a></li>
+							<li><a href="#contacts">Contact</a></li>
 
 						</ul>
 						<ul class="icons">
@@ -47,20 +159,34 @@
 
 						<!-- Featured Post -->
 							<article class="post featured">
-								<header class="major">
-									<h2><a href="#">Thomas Sigwalt</a></h2>
+								<header class="major" id="About">
+									<h2 >Who Am I?</h2>
 									<p>I'm a passionate developer but more importantly I'm passionate about technology.</p>
 								</header>
-								<a href="#" class="image main"><img class="Tom" src="images/Tom.png" id="Thomas" alt="a picture of Thomas Sigwalt" /></a>
-																
+								<div class="parent image" >
+									<a href="" class="image main"></a><img class="Tom" src="images/Tom.png" id="Thomas" alt="a picture of Thomas Sigwalt" /></a>
+								
+								<ul style="list-style-type:none;" id="traits" alt="Tom's positive traits">
+									<li class="traitsGrey" id="trait1">"Practice makes progress, not perfection"</li>
+									<li class="traitsGrey" id="trait2">"Every problem is an opportunity in disguise"</li>
+									<li class="traitsGrey" id="trait3">"Communication is the most important skill in a team"</li>
+								  </ul>  
+								</div>
+							<!-- Grandma's Font -->
+							<aside id="parallax">
+								<p id="Arline">I liked my Grandma's handwriting so much I made it into a font<br> ~ Arline</p>
+							</aside>
+							
 							</article>
 
+						
+
 						<!-- Posts -->
-							<section class="posts">
+							<section class="posts" id="projects">
 								<article>
 									<header>
 
-										<h3><a href="Projects">Drumkit</a></h3>
+										<h3>Drumkit</h3>
 									</header>
 									<a href="Drumkit/drumkit.html" class="image fit"><img src="https://images.unsplash.com/photo-1575578959733-2bcfc732830a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80" alt="" /></a>
 									<p>A JavaScript drumkit. The program does two things: first it makes a drum noise tied to that key, second it makes a quick popping animation.</p>
@@ -70,12 +196,12 @@
 								</article>
 								<article>
 									<header>
-										<h4><a href="#">Project 2</a></h4>
+										<h4>Coming Soon...</h4>
 									</header>
-									<a href="#" class="image fit"><img src="https://images.unsplash.com/photo-1575203091586-611fe505bb0e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" /></a>
-									<p>JS and CSS Clock. This program makes a clock that updates the arm postition with the actual time through JavaScript.</p>
+									<a class="image fit"><img src="https://images.unsplash.com/photo-1575203091586-611fe505bb0e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="" /></a>
+									<p>Future works coming. Look out for new content to come soon!</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">View Code</a></li>
+										<li><a class="button">Pending</a></li>
 									</ul>
 								</article>
 							</section>
@@ -91,9 +217,9 @@
 						<section class="split contact">
 							
 							
-							<section>
+							<section id="contacts">
 								<h5>Email</h5>
-								<p><a href="#">tomsigwalt@gmail.com</a></p>
+								<p>tomsigwalt@gmail.com</p>
 							</section>
 							<section>
 								<h6>Social</h6>

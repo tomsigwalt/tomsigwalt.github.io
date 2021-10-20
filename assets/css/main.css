@@ -213,7 +213,7 @@ input, select, textarea {
 	}
 
 	h4 {
-		font-size: 1rem;
+		font-size: 1.25rem;
 	}
 
 	h5 {
@@ -2643,8 +2643,10 @@ input, select, textarea {
 			}
 
 			.image.main img {
-				width: 100%;
+				width: 50%;
+				position: relative;
 			}
+			
 
 		@media screen and (max-width: 736px) {
 
@@ -2945,12 +2947,12 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 -2rem 0;
 			text-align: center;
 		}
 
 			header.major > :last-child {
-				margin-bottom: 0;
+				margin-bottom: 3rem;
 			}
 
 			header.major > p {
@@ -3453,7 +3455,7 @@ input, select, textarea {
 
 			#intro {
 				padding: 4rem 4rem 2rem 4rem ;
-				min-height: 90vh;
+				min-height: 100vh;
 			}
 
 				#intro p br {
@@ -3469,8 +3471,8 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#intro {
-				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 80vh;
+				padding: 3rem 2rem 10rem 2rem ;
+				min-height: 100vh;
 			}
 
 				#intro h1 {
@@ -3765,7 +3767,7 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 4rem 4rem 2rem 4rem ;
+			padding: 15rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
@@ -3779,7 +3781,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 8rem 8rem 6rem 8rem ;
+			padding: 15rem 0rem 15rem 0rem ;
 		}
 
 			#main > .post header.major > .date {
@@ -3799,7 +3801,7 @@ input, select, textarea {
 			@media screen and (max-width: 1280px) {
 
 				#main > .post {
-					padding: 6rem 4rem 4rem 4rem ;
+					padding: 15rem 0rem 15rem 0rem ;
 				}
 
 			}
@@ -3807,7 +3809,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 4rem 2rem 2rem 2rem ;
+					padding: 30rem 0rem 30rem 0rem ;
 				}
 
 					#main > .post header.major > .date {
@@ -3932,7 +3934,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#main > * {
-				padding: 2rem 2rem 0.1rem 2rem ;
+				padding: 40rem 2rem 0.1rem 2rem ;
 			}
 
 		}

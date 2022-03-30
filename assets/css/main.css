@@ -3767,7 +3767,6 @@ input, select, textarea {
 	}
 
 		#main > * {
-			padding: 15rem 4rem 2rem 4rem ;
 			border-top: solid 2px #eeeeee;
 			margin: 0;
 		}
@@ -3781,7 +3780,7 @@ input, select, textarea {
 		}
 
 		#main > .post {
-			padding: 15rem 0rem 15rem 0rem ;
+			
 		}
 
 			#main > .post header.major > .date {
@@ -3809,7 +3808,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .post {
-					padding: 30rem 0rem 30rem 0rem ;
+					
 				}
 
 					#main > .post header.major > .date {
